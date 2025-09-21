@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "statichitboxes",
+	"version": "${version}",
+	"name": "StaticHitboxes",
+	"description": "A simple mod to keep hitboxes of other players from changing upon swimming flying sleeping etc...",
+	"authors": [
+		"Viraps"
+	],
+	"contact": {
+      "discord": "viraps55"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/statichitboxes/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.viraps.hitboxes.StaticHitboxes"
+		]
+	},
+	"mixins": [
+		"statichitboxes.mixins.json"
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": ">=1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
